@@ -2,7 +2,7 @@ package merge_map
 
 import "reflect"
 
-func mergeMap(src map[string]interface{}, new map[string]interface{}) {
+func New2Src(src map[string]interface{}, new map[string]interface{}) {
 	for k := range new {
 		for k1 := range src {
 			if k == k1 {
